@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+.frankenreview/
+
+# Python artifacts
+*.pyc
+*.pyo
+*.pyd
+
+# Local scratch outputs
+artifacts/run_log.txt
+artifacts/condition_matrix_report.txt
+artifacts/*.tmp
+
+# Alternate archives and legacy package outputs
+gridlock_submission_bundle.zip
+gridlock_submission_bundle.tar.gz
+gridlock_release_bundle.zip
+gridlock_release_bundle.tar.gz
+
+# Unpacked historical file is optional and should not be committed
+data/historical_training.csv
