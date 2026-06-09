@@ -1,11 +1,13 @@
 
-# GridLock 2.0 Forecasting Release
+# GridLock 2.0 Forecasting Pipeline
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
 ![Score](https://img.shields.io/badge/Local_R%C2%B2_Score-95.00%25-success)
 ![Pipeline](https://img.shields.io/badge/Architecture-Hierarchical_Routing_%2B_Ridge-orange)
 
-This directory contains a release-ready presentation of the validated GridLock 2.0 forecasting pipeline in both script and notebook formats.
+GridLock 2.0 is a traffic intelligence hackathon organized by Flipkart in partnership with Bengaluru Traffic Police and hosted on HackerEarth. The event focuses on AI/ML methods for congestion analysis, movement pattern understanding, and broader urban mobility decision support using real Bengaluru traffic data. Official competition page: [gridlock2point0.hackerearth.com](https://gridlock2point0.hackerearth.com/).
+
+This repository packages the forecasting pipeline used for the Day 49 demand prediction task, together with a script, companion notebooks, model artifact, and local evaluation files.
 
 ## Quick start
 
@@ -19,7 +21,7 @@ The final predictor is not a neural network. It combines:
 - a ridge regression calibrator,
 - and a bounded geohash residual correction.
 
-## Release layout
+## Repository layout
 
 ```text
 GridLock 2.0/
@@ -189,8 +191,8 @@ Inference telemetry:
 
 ## Data source and disclaimer
 
-This repository packages the competition train split, competition test split, local evaluation ground truth, and compressed historical file used by the release pipeline.
+This repository packages the competition train split, competition test split, local evaluation ground truth, and compressed historical file used by the pipeline.
 
 The historical source is credited to the Kaggle dataset `kweklydia5/grabtrafficdata`, which is also referenced in the pipeline for optional local download resolution through `kagglehub`.
 
-This release is provided for research, reproducibility, and portfolio documentation purposes. Dataset ownership, competition rules, and redistribution terms remain with the original Kaggle competition and dataset authors. Users should review the relevant Kaggle pages and terms before reusing or redistributing the bundled data files.
+Dataset ownership, competition rules, and redistribution terms remain with the original competition and dataset authors. Users should review the relevant competition page, Kaggle dataset page, and platform terms before reusing or redistributing the bundled data files.

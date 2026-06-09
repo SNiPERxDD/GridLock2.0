@@ -1,4 +1,4 @@
-"""Release-ready GridLock 2.0 forecasting pipeline."""
+"""GridLock 2.0 forecasting pipeline."""
 
 from __future__ import annotations
 
@@ -879,7 +879,7 @@ def write_validation_summary(summary: dict[str, object]) -> None:
 
 
 def main() -> None:
-    """Train or load the release artifact, then write submission.csv."""
+    """Train or load the pipeline artifact, then write submission.csv."""
     artifact = load_model_artifact()
     availability = resolve_input_paths()
     ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
