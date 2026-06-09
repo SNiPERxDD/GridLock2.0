@@ -47,9 +47,21 @@ GridLock 2.0/
 ## Forecasting method
 
 ```mermaid
+%%{init: {
+%%  "theme": "base",
+%%  "themeVariables": {
+%%    "background": "#0d1117",
+%%    "primaryTextColor": "#111827",
+%%    "secondaryTextColor": "#111827",
+%%    "tertiaryTextColor": "#111827",
+%%    "lineColor": "#d1d5db",
+%%    "clusterBkg": "#374151",
+%%    "clusterBorder": "#9ca3af"
+%%  }
+%%}}%%
 graph TD
-    classDef stage fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    classDef data fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
+    classDef stage fill:#f8fafc,color:#111827,stroke:#374151,stroke-width:2px;
+    classDef data fill:#dbeafe,color:#111827,stroke:#0284c7,stroke-width:2px;
 
     D1[(historical_training.csv.xz)]:::data --> P1
     D2[(competition_test.csv)]:::data --> P1
@@ -175,11 +187,10 @@ Inference telemetry:
 - basis days: `12`
 - calibration rows: `7,872`
 
-## Notes
+## Data source and disclaimer
 
-- The script and notebook were verified in four runtime conditions:
-  - with dataset and cached model
-  - with dataset and no cached model
-  - without dataset and cached model
-  - without dataset and no cached model
-- When data files are missing, both entrypoints exit cleanly with an explanatory message.
+This repository packages the competition train split, competition test split, local evaluation ground truth, and compressed historical file used by the release pipeline.
+
+The historical source is credited to the Kaggle dataset `kweklydia5/grabtrafficdata`, which is also referenced in the pipeline for optional local download resolution through `kagglehub`.
+
+This release is provided for research, reproducibility, and portfolio documentation purposes. Dataset ownership, competition rules, and redistribution terms remain with the original Kaggle competition and dataset authors. Users should review the relevant Kaggle pages and terms before reusing or redistributing the bundled data files.
