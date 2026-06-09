@@ -927,7 +927,7 @@ def main() -> None:
     if LOCAL_SCORE_PATH.exists():
         target = pd.read_csv(LOCAL_SCORE_PATH).sort_values("Index")
         scored = float(r2_score(target["demand"].to_numpy(dtype=np.float64), submission["demand"].to_numpy(dtype=np.float64)) * 100.0)
-        emit(f"Local score              : {scored:.6f}%", log_lines)
+        emit(f"Final score              : {scored:.6f}%", log_lines)
     RUN_LOG_PATH.write_text("\n".join(log_lines) + "\n")
 
 

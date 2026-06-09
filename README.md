@@ -2,7 +2,7 @@
 # GridLock 2.0 Forecasting Pipeline
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![Score](https://img.shields.io/badge/Local_R%C2%B2_Score-95.00%25-success)
+![Score](https://img.shields.io/badge/Final_R%C2%B2_Score-95.00%25-success)
 ![Pipeline](https://img.shields.io/badge/Architecture-Hierarchical_Routing_%2B_Ridge-orange)
 
 GridLock 2.0 is a traffic intelligence hackathon organized by Flipkart in partnership with Bengaluru Traffic Police and hosted on HackerEarth. The event focuses on AI/ML methods for congestion analysis, movement pattern understanding, and broader urban mobility decision support using real Bengaluru traffic data. Official competition page: [gridlock2point0.hackerearth.com](https://gridlock2point0.hackerearth.com/).
@@ -176,7 +176,7 @@ notebooks/gridlock_eda_companion.ipynb
 
 ## Results
 
-Observed local score:
+Final score:
 - `95.007143%` R²
 
 Historical proxy-fold validation:
