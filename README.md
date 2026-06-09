@@ -5,9 +5,9 @@
 ![Score](https://img.shields.io/badge/Final_R%C2%B2_Score-95.00%25-success)
 ![Pipeline](https://img.shields.io/badge/Architecture-Hierarchical_Routing_%2B_Ridge-orange)
 
-GridLock 2.0 is a traffic intelligence hackathon organized by Flipkart in partnership with Bengaluru Traffic Police and hosted on HackerEarth. The event focuses on AI/ML methods for congestion analysis, movement pattern understanding, and broader urban mobility decision support using real Bengaluru traffic data. Official competition page: [gridlock2point0.hackerearth.com](https://gridlock2point0.hackerearth.com/).
+GridLock 2.0 is a traffic intelligence hackathon organized by Flipkart in partnership with Bengaluru Traffic Police and hosted on HackerEarth. Phase 1 is an online machine learning challenge with a live leaderboard, where participants submit models against the provided task and improve them over multiple submissions. The official competition page is [GridLock 2.0 on HackerEarth](https://gridlock2point0.hackerearth.com/).
 
-This repository packages the forecasting pipeline used for the Day 49 demand prediction task, together with a script, companion notebooks, model artifact, and local evaluation files.
+This repository packages the Phase 1 forecasting pipeline used for the Day 49 demand prediction task, together with a script, companion notebooks, model artifact, and local evaluation files.
 
 ## Quick start
 
