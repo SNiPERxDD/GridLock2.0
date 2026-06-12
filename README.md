@@ -9,6 +9,8 @@ GridLock 2.0 is a traffic intelligence hackathon organized by Flipkart in partne
 
 This repository packages the Phase 1 forecasting pipeline used for the Day 49 demand prediction task, together with a script, companion notebooks, model artifact, and local evaluation files.
 
+License: MIT. See [`LICENSE`](LICENSE).
+
 ## Quick start
 
 ```bash
